@@ -65,7 +65,7 @@ const Register = () => {
 
 
   const submitButton = async (formData) => {
-     formData.preventDefault();
+     //formData.preventDefault();
     if (validateInput(formData)) {
       setLoading(true);
       try {
