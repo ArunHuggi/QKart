@@ -9,6 +9,7 @@ import Header from "./Header";
 import "./Register.css";
 import  "../ipConfig.json"
 import { useHistory } from "react-router-dom";
+import {Link} from "react-router-dom"
 
 const Register = () => {
   const { enqueueSnackbar } = useSnackbar();
@@ -26,8 +27,11 @@ const Register = () => {
   const textData = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setFormData(values=>({...values,[name]:value}))
+    setFormData(values=>({...values,[name]:value}));
+   // console.log("name");
+    //console.log("value",value);
   }
+
   // TODO: CRIO_TASK_MODULE_REGISTER - Implement the register function
   /**
    * Definition for register handler
@@ -93,6 +97,8 @@ const Register = () => {
       }
     }
   }
+
+  //console.log(textData);
 
   //console.log(history);
   // TODO: CRIO_TASK_MODULE_REGISTER - Implement user input validation logic
@@ -186,9 +192,7 @@ const Register = () => {
            </Button>
           <p className="secondary-action">
             Already have an account?{" "}
-             <a className="link" href="#">
-              Login here
-             </a>
+            <Link className="link" to="/login">Login here</Link>
           </p>
         </Stack>
       </Box>
