@@ -8,7 +8,7 @@ import {Link,useHistory} from "react-router-dom"
 const Header = ({ children, hasHiddenAuthButtons }) => {
   const username = localStorage.getItem("username");
   const history = useHistory();
-  console.log(children, hasHiddenAuthButtons);
+  //console.log(children, hasHiddenAuthButtons);
     return (
       <Box className="header">
         <Box className="header-title">
