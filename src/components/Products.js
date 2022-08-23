@@ -306,8 +306,9 @@ const Products = () => {
             headers: { Authorization: "Bearer " + token }
           }
         );
-        console.log(res.data)
+        //console.log(res.data)
         setFetchedcart(res.data);
+        console.log(token);
         setCartList(generateCartItemsFrom(res.data, products));
         // console.log("inside useeffect",fetchedcart,res)
       }
