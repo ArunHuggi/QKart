@@ -336,7 +336,7 @@ const Products = () => {
               </InputAdornment>
             ),
           }}
-          placeholder="Search for items/categories"
+          placeholder="Search for items"
           name="search"
         />
       </Header>
