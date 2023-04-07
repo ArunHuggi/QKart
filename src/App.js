@@ -7,19 +7,19 @@ import Checkout from "./components/Checkout";
 import Thanks from "./components/Thanks";
 
 export const config = {
-  endpoint: `https://qkart-frontend-appplication.herokuapp.com/api/v1`
+  endpoint: `https://qkart-frontend-92c8.onrender.com/api/v1`,
 };
 
 function App() {
   return (
     <div className="App">
-        <Switch>
-          <Route exact path="/" component={Products}/>
-          <Route path="/login" component={Login}/>
-          <Route path="/register" component={Register}/>
-          <Route path="/checkout" component={Checkout}/>
-          <Route path="/thanks" component={Thanks}/>
-        </Switch>
+      <Switch>
+        <Route exact path="/" component={Products} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
+        <Route path="/checkout" component={Checkout} />
+        <Route path="/thanks" component={Thanks} />
+      </Switch>
     </div>
   );
 }
